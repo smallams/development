@@ -8,6 +8,10 @@ app.get('/', (request, response) => {
   });
 })
 
+app.get('/about', (request, response) => {
+  response.send("About Page");
+});
+
 const PORT = process.env.PORT || 4000;
 app.listen(PORT, () =>{
   console.log(`Listening to port ${PORT}`);
